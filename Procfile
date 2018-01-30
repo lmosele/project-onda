@@ -1,0 +1,1 @@
+web: yarn build --port ${PORT-:3000}
