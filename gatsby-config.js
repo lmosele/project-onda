@@ -2,7 +2,7 @@ const autoprefixer = require('autoprefixer')
 const rucksackCSS = require('rucksack-css')
 const config = require('./config/SiteConfig')
 
-const pathPrefix = config.pathPrefix === './' ? '' : config.pathPrefix
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
 module.exports = {
 	pathPrefix: config.pathPrefix,
