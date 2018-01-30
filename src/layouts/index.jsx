@@ -1,0 +1,24 @@
+import React from 'react';
+import Helmet from 'react-helmet';
+import Navigation from '../components/Navigation/Navigation';
+import SEO from '../components/SEO/SEO';
+import Splash from '../components/Splash/Splash';
+import config from '../../config/SiteConfig';
+import '../utils/emma.scss';
+
+const MainLayout = (props) => {
+  const { children } = props;
+  return (
+    <div className="layout">
+      <Helmet>
+        <title>{config.siteTitle}</title>
+      </Helmet>
+      <Splash />
+      <SEO />
+      <Navigation />
+      {children()}
+    </div>
+  );
+};
+
+export default MainLayout;
